@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team-Portfolio</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Meet Our Team</h1>
+            <p>We are a group of passionate innovators, designers, and builders dedicated to crafting beautiful and functional digital experiences.</p>
+        </header>
+
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterTeam('all')">All Team</button>
+            <button class="filter-btn" onclick="filterTeam('design')">Design</button>
+            <button class="filter-btn" onclick="filterTeam('dev')">Development</button>
+            <button class="filter-btn" onclick="filterTeam('management')">Management</button>
+        </div>
+
+        <!-- Team Grid -->
+        <main class="team-grid">
+            
+            <!-- Member 1 -->
+            <div class="team-card" data-category="dev" onclick="openModal(this)">
+                <div class="image-wrapper">
+                    <!-- Placeholder image: Swap with real image URL -->
+                    <img src="" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Chrisjohn B. Pacay</h3>
+                    <p class="role">Full Stack Developer</p>
+                    <p class="bio">Has over 4 years of experience in full-stack development, building scalable web applications.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <span class="full-bio" style="display:none;">Has over 4 years of experience in full-stack development, building scalable web applications and collaborating across product, design, and engineering teams.</span>
+                    <span class="email-data" style="display:none;">chrisjohnpacay1@gmail.com</span>
+                    <span class="skills-data" style="display:none;">JavaScript, React, Node.js, UI Systems</span>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="team-card" data-category="dev" onclick="openModal(this)">
+                <div class="image-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="card-info">
+                    <h3></h3>
+                    <p class="role">Developer</p>
+                    <p class="bio"></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <span class="full-bio" style="display:none;"></span>
+                    <span class="email-data" style="display:none;"></span>
+                    <span class="skills-data" style="display:none;"></span>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="team-card" data-category="design" onclick="openModal(this)">
+                <div class="image-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="card-info">
+                    <h3></h3>
+                    <p class="role"></p>
+                    <p class="bio"></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                    <span class="full-bio" style="display:none;"></span>
+                    <span class="email-data" style="display:none;"></span>
+                    <span class="skills-data" style="display:none;"></span>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="team-card" data-category="dev" onclick="openModal(this)">
+                <div class="image-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="card-info">
+                    <h3></h3>
+                    <p class="role">Backend Developer</p>
+                    <p class="bio"></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Globe"><i class="fas fa-globe"></i></a>
+                    </div>
+                    <span class="full-bio" style="display:none;"></span>
+                    <span class="email-data" style="display:none;"></span>
+                    <span class="skills-data" style="display:none;"></span>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Team Member">
+                <div class="modal-info">
+                    <h2 id="modalName">Team Member</h2>
+                    <p id="modalRole" class="modal-role">Role</p>
+                    <p id="modalBio" class="modal-bio">Detailed bio goes here...</p>
+                    
+                    <div class="skills-tags">
+                        <h4>Core Expertise:</h4>
+                        <div id="modalSkills" class="tags-container">
+                            </div>
+                    </div>
+                    
+                    <a id="modalMail" href="#" class="modal-contact-btn">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

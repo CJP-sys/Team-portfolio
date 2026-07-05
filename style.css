@@ -1,0 +1,303 @@
+﻿        /* --- Reset & Base Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Header Section --- */
+        .header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            letter-spacing: -0.05em;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+
+        /*Transition classes for JavaScript filtering */
+        .team-card {
+            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .team-card.hide {
+            display: none;
+            }   
+
+        /* --- Team Grid Layout --- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        /* --- Team Card Styles --- */
+        .team-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Image Wrapper with Hover Overlay effect */
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+            background-color: #e2e8f0;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .team-card:hover .image-wrapper img {
+            transform: scale(1.05);
+        }
+
+        /* Card Info */
+        .card-info {
+            padding: 2rem 1.5rem;
+        }
+
+        .card-info h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-info .role {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2563eb;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .card-info .bio {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Social Media Icons */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: #94a3b8;
+            font-size: 1.2rem;
+            transition: color 0.2s ease;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #2563eb;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 768px) {
+            body {
+                padding: 2rem 1rem;
+            }
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            .header {
+                margin-bottom: 3rem;
+            }
+        }
+
+        .modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.6); /* Dark tint */
+    backdrop-filter: blur(8px); /* Modern blur effect */
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+/* --- Modal Content Box --- */
+.modal-content {
+    background-color: #ffffff;
+    max-width: 750px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10;
+}
+.close-btn:hover { color: #0f172a; }
+
+/* Layout inside the Modal */
+.modal-body {
+    display: flex;
+}
+
+.modal-body img {
+    width: 45%;
+    object-fit: cover;
+    height: 450px;
+}
+
+.modal-info {
+    padding: 2.5rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-info h2 {
+    font-size: 2rem;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.modal-role {
+    color: #2563eb;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+.modal-bio {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Skill Tags */
+.skills-tags h4 {
+    font-size: 0.9rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Call to Action Button */
+.modal-contact-btn {
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.modal-contact-btn:hover { background: #1d4ed8; }
+
+/* Responsive adjustments */
+@media (max-width: 650px) {
+    .modal-body { flex-direction: column; }
+    .modal-body img { width: 100%; height: 250px; }
+    .modal-info { width: 100%; padding: 1.5rem; }
+}
