@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - YKB Clothing</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<div class="checkout-container">
+
+    <div class="checkout-left">
+        <h2>Shipping Information</h2>
+
+        <form id="checkout-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="Street Address" required>
+
+            <div class="row">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="Postal Code" required>
+            </div>
+
+            <h3>Payment Method</h3>
+
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="payment" value="COD" checked>
+Cash on Delivery
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="GCash">
+GCash
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="Card">
+Credit/Debit Card
+                </label>
+            </div>
+
+            <button type="submit">
+                Place Order
+            </button>
+        </form>
+    </div>
+
+    <div class="checkout-right">
+        <h2>Order Summary</h2>
+
+        <div id="order-items"></div>
+
+        <hr>
+
+        <div class="summary">
+            <h3>Total:</h3>
+            <h3 id="total-price">₱0</h3>
+        </div>
+    </div>
+
+</div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

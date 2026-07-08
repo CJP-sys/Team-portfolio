@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    linear-gradient(135deg,#088178,#4fd1c5,#e8f6ea);
+    background-size:300% 300%;
+    animation:gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.login-box{
+    width:420px;
+    padding:45px;
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.15),
+    inset 0 1px 1px rgba(255,255,255,0.4);
+
+    transition:.4s;
+}
+
+.login-box:hover{
+    transform:translateY(-5px);
+}
+
+.login-box h2{
+    text-align:center;
+    color:white;
+    font-size:2rem;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+.input-box{
+    position:relative;
+    margin:28px 0;
+}
+
+.input-box input{
+    width:100%;
+    height:55px;
+    border:none;
+    outline:none;
+
+    border-radius:14px;
+    padding:0 50px 0 15px;
+
+    background:rgba(255,255,255,0.15);
+    color:white;
+    font-size:15px;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    transition:.3s;
+}
+
+.input-box input:focus{
+    border-color:#ffffff;
+    box-shadow:0 0 15px rgba(255,255,255,.3);
+}
+
+.input-box label{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:rgba(255,255,255,.8);
+    pointer-events:none;
+    transition:.3s;
+}
+
+.input-box input:focus~label,
+.input-box input:not(:placeholder-shown)~label{
+    top:-10px;
+    left:10px;
+    font-size:.8rem;
+    color:white;
+}
+
+.input-box .icon{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+    font-size:1.2rem;
+}
+
+.input-box input::placeholder{
+    color:transparent;
+}
+
+.remember-forgot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    font-size:.9rem;
+    margin-bottom:20px;
+}
+
+.remember-forgot a{
+    color:white;
+    text-decoration:none;
+}
+
+.remember-forgot a:hover{
+    text-decoration:underline;
+}
+
+.remember-forgot input{
+    accent-color:white;
+}
+
+button{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:14px;
+
+    background:white;
+    color:#088178;
+
+    font-size:1rem;
+    font-weight:700;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+.register-link{
+    margin-top:25px;
+    text-align:center;
+    color:white;
+}
+
+.register-link a{
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+.logo{
+    display:flex;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+.logo ion-icon{
+    font-size:3.5rem;
+    color:white;
+}
+
+.subtitle{
+    text-align:center;
+    color:rgba(255,255,255,.8);
+    margin-bottom:25px;
+}

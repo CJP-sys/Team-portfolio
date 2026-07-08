@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YKB CLOTHING</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="y3.css">
+</head>
+<body>
+
+    <section id="header">
+
+        <a href="#">
+            <img src= "images/banner/b1.png" class="logo" alt="YKB Clothing">
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1 section-m1">
+        <div class="single-pro-image">
+            <img src="images/products/p8.webp" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="images/products/p8.webp" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/products/pn2.jpg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/products/pn3.webp" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/products/pn1.jpg" width="100%" class="small-img" alt="">
+            </div>
+          </div>
+        </div>
+    
+
+    <div class="single-pro-details">
+        <h6>Home /T-shirt</h6>
+        <h4>Men's Fashion T shirt</h4>
+        <h2>$139.00</h2>
+        <select>
+            <option>Select Size</option>
+            <option>XXL</option>
+            <option>XL</option>
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+        </select>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>Blast off in style with this eye-catching astronaut T-shirt! Featuring a detailed illustration of a lone astronaut floating in the vastness of space, this design captures the spirit of exploration and adventure. The background showcases stars, planets, and galaxies, adding a cosmic vibe that’s both modern and inspiring. Perfect for space lovers, science geeks, or anyone who dreams big. Made from soft, breathable fabric, this tee is as comfortable as it is cool — whether you're stargazing or just chilling on Earth.</span>
+        </div>
+    </section>
+    
+        <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+
+        <div class="pro-container" id="related-products"></div>
+
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span> 
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/banner/b1.png" alt="">
+            <h4>Contact</h4>
+            <p> <strong>Address:</strong> 4170 Malaban Binan laguna ilaya st, zone 4</p>
+            <p> <strong>Phone:</strong> 09510699549</p>
+            <p> <strong>Hours:</strong> 9:00am - 9:00pm Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-tiktok"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From app Store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/pay1.webp" alt="">
+                <img src="images/pay/pay2.webp" alt="">
+            </div>
+            <p>Secure Payment Gateway </p>
+            <img src="images/pay/pay3.jpg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2025, Tech2 etc - HTML CSS Ecommerce Template</p>
+             </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smalling = document.getElementsByClassName("small-img");
+
+        smalling [0].onclick = function () {
+            MainImg.src = smalling [0].src;
+        }
+        smalling [1].onclick = function () {
+            MainImg.src = smalling [1].src;
+        }
+        smalling [2].onclick = function () {
+            MainImg.src = smalling [2].src;
+        }
+        smalling [3].onclick = function () {
+            MainImg.src = smalling [3].src;
+        }
+        
+    </script>
+
+    
+
+<script>
+
+const products = [
+{
+    brand: "SHEIN",
+    name: "fashion inspiration & the latest trends at SHEIN",
+    price: "230$",
+    image: "images/products/n1.jpg",
+    link: "shein.html"
+},
+{
+    brand: "Temu",
+    name: "Women sleeve",
+    price: "300$",
+    image: "images/products/n2.jpg",
+    link: "temu.html"
+},
+{
+    brand: "SHEIN",
+    name: "Aesthetic Dress sleeve for Women",
+    price: "270$",
+    image: "images/products/n3.jpg",
+    link: "sheindress.html"
+},
+{
+    brand: "ZAFUL",
+    name: "Women's Cropped Turtleneck Sweater",
+    price: "120$",
+    image: "images/products/n4.jpg",
+    link: "zful.html"
+},
+{
+    brand: "YKB",
+    name: "Astronaut Shirt",
+    price: "139$",
+    image: "images/products/p1.jpg",
+    link: "sproduct.html"
+},
+{
+    brand: "SHEIN",
+    name: "Square Neck Ruched Hanky ",
+    price: "139$",
+    image: "images/products/n5.jpg",
+    link: "hanky.html"
+},
+{
+    brand: "AMAZON",
+    name: "SweatyRocks Women's Graphic Print Round Neck T Shirt Short Sleeve",
+    price: "139$",
+    image: "images/products/n6.jpg",
+    link: "amazon.html"
+},
+{
+    brand: "SHEIN",
+    name: "Women's Color Block False Two Piece Halter Neck Tee",
+    price: "139$",
+    image: "images/products/n7.jpg",
+    link: "twopiece.html"
+},
+{
+    brand: "CHANEL",
+    name: "chanel dress ss23 logo FR38 ASL8438 - Chanel Dress / Dress",
+    price: "139$",
+    image: "images/products/n8.jpg",
+    link: "chanel.html"
+},
+{
+    brand: "Don't Blame The Kids",
+    name: "DBTK Trippy shirt",
+    price: "139$",
+    image: "images/products/p2.jpg",
+    link: "dbtk.html"
+},
+{
+    brand: "Ben Davis",
+    name: "Ben Davis Workwear Clothing Brand Vintage Gorilla Iconic Style T-Shirt",
+    price: "139$",
+    image: "images/products/p3.png",
+    link: "bendavis.html"
+},
+{
+    brand: "Nike",
+    name: "Vintage Red Nike Hoodie - Large– Domno Vintage",
+    price: "139$",
+    image: "images/products/p4.webp",
+    link: "nike.html"
+},
+{
+    brand: "PHILIPPINES SHIRT",
+    name: "PHILIPPINES GRUNGE FLAG MENS T-SHIRT TEE PILIPINAS PHILIPPINE",
+    price: "139$",
+    image: "images/products/p5.webp",
+    link: "philippines.html"
+},
+{
+    brand: "adidas",
+    name: "KSUAL White Polo Shirt For Man Plus Size Korean Cotton",
+    price: "139$",
+    image: "images/products/p6.webp",
+    link: "adidas.html"
+},
+{
+    brand: "FENDI",
+    name: "Fendi | Tops | New Rubber Cats Eyes Size L New Beautiful | Poshmark",
+    price: "139$",
+    image: "images/products/p7.jpeg",
+    link: "fendi.html"
+},
+{
+    brand: "Y-3 END",
+    name: "Y-3 Gfx Short Sleeve T-Shirt Off White | END.",
+    price: "139$",
+    image: "images/products/p8.webp",
+    link: "y3.html"
+}
+
+];
+
+const currentPage = window.location.pathname.split("/").pop();
+
+const filteredProducts = products.filter(
+    product => product.link !== currentPage
+);
+
+const shuffled = [...filteredProducts];
+
+for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+}
+
+const selected = shuffled.slice(0, 4);
+
+const container = document.getElementById("related-products");
+
+selected.forEach(product => {
+    container.innerHTML += `
+        <div class="pro" onclick="window.location.href='${product.link}'">
+            <img src="${product.image}" alt="">
+            <div class="des">
+                <span>${product.brand}</span>
+                <h5>${product.name}</h5>
+                <h4>${product.price}</h4>
+            </div>
+
+            <a href="#" onclick="event.stopPropagation();">
+                <i class="fas fa-shopping-cart cart"></i>
+            </a>
+        </div>
+    `;
+});
+
+</script>
+
+
+    <script src="script.js"></script>   
+</body>
+</html>

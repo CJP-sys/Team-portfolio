@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YKB CLOTHING</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <section id="header">
+
+        <a href="index.html">
+            <img src= "images/banner/b1.png" class="logo" alt="YKB Clothing">
+        </a>
+        
+
+        <div>
+            <ul id="navbar">
+
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+
+    <li>
+        <a href="shop.html">Shop</a>
+    </li>
+
+    <li>
+        <a href="blog.html">Blog</a>
+    </li>
+
+    <li>
+        <a href="about.html">About</a>
+    </li>
+
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
+
+    <li class="user-menu">
+        <a href="#" id="user-btn">
+            <i class="fas fa-user"></i>
+            <span id="nav-username"></span>
+        </a>
+
+        <div class="dropdown" id="user-dropdown">
+            <a href="profile.html">👤 My Profile</a>
+            <a href="orders.html">📦 My Orders</a>
+            <a href="#" onclick="logout()">🚪 Logout</a>
+        </div>
+    </li>
+
+    <li class="wishlist-icon">
+        <a href="wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span id="wishlist-count">0</span>
+        </a>
+    </li>
+
+    <li id="lg-bag">
+        <a href="cart.html">
+            <i class="fas fa-shopping-bag"></i>
+            <span id="cart-count">0</span>
+        </a>
+    </li>
+
+    <li>
+        <button id="dark-mode-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </li>
+
+</ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all Products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button onclick="window.location.href='shop.html'">
+            Shop Now
+        </button>
+        
+    </section>  
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src= "images/banner/f1.png">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src= "images/banner/f2.png">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src= "images/banner/f3.png">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src= "images/banner/f4.png">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src= "images/banner/f5.png">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src= "images/banner/f6.png">
+            <h6>F24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Features Products |Men</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src= "images/products/p1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱13,900</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='dbtk.html';">
+                <img src= "images/products/p2.jpg">
+                <div class="des">
+                    <span>Don't Blame The Kids</span>
+                    <h5>DBTK Trippy shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>20$</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='bendavis.html';">
+                <img src= "images/products/p3.png" alt="">
+                <div class="des">
+                    <span>Ben Davis</span>
+                    <h5>Ben Davis Workwear Clothing Brand Vintage Gorilla Iconic Style T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>25$</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='nike.html';">
+                <img src= "images/products/p4.webp" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Vintage Red Nike Hoodie - Large– Domno Vintage</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>45$</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='philippines.html';">
+                <img src= "images/products/p5.webp" alt="">
+                <div class="des">
+                    <span>Philippines   </span>
+                    <h5>PHILIPPINES GRUNGE FLAG MENS T-SHIRT TEE PILIPINAS PHILIPPINE</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>10$</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='adidas.html';">
+                <img src= "images/products/p6.webp" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>KSUAL White Polo Shirt For Man Plus Size Korean Cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>36$</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='fendi.html';">
+                <img src= "images/products/p7.jpeg" alt="">
+                <div class="des">
+                    <span>Fendi</span>
+                    <h5> Fendi | Tops | New Rubber Cats Eyes Size L New Beautiful | Poshmark</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>25$</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='y3.html';">
+                <img src= "images/products/p8.webp" alt="">
+                <div class="des">
+                    <span>Y-3 END</span>
+                    <h5>Y-3 Gfx Short Sleeve T-Shirt Off White | END.</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>27$</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services </h4>
+        <h2>Up to <span>70% off</span> - All t-shirt & Accessories</h2>
+        <button class="normal"> Explore More</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+    
+    <h2>New Arrivals | Women</h2>
+    
+    <p>
+    Summer Collection New Modern Design
+    </p>
+    
+    
+    <div class="pro-container">
+    
+    
+    
+    <!-- 1 -->
+    <div class="pro" onclick="window.location.href='shein.html';">
+    
+    <img src="images/products/n1.jpg" alt="">
+    
+    <div class="des">
+    
+    <span>SHEIN</span>
+    
+    <h5>
+    Fashion inspiration & the latest trends at SHEIN
+    </h5>
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    <h4>$230</h4>
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    </div>
+    
+    
+    
+    
+    
+    <!-- 2 -->
+    <div class="pro" onclick="window.location.href='temu.html';">
+    
+    <img src="images/products/n2.jpg" alt="">
+    
+    
+    <div class="des">
+    
+    <span>TEMU</span>
+    
+    <h5>
+    Women Sleeve Fashion Top
+    </h5>
+    
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    
+    <h4>$300</h4>
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    
+    </div>
+    
+    <!-- 3 -->
+    <div class="pro" onclick="window.location.href='sheindress.html';">
+    
+    
+    <img src="images/products/n3.jpg" alt="">
+    
+    
+    <div class="des">
+    
+    <span>SHEIN</span>
+    
+    <h5>
+    Aesthetic Dress Sleeve For Women
+    </h5>
+    
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    
+    <h4>$270</h4>
+    
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    
+    </div>
+    
+    
+    <!-- 4 -->
+    <div class="pro" onclick="window.location.href='zful.html';">
+    
+    
+    <img src="images/products/n4.jpg" alt="">
+    
+    
+    <div class="des">
+    
+    <span>ZAFUL</span>
+    
+    <h5>
+    Women's Cropped Turtleneck Sweater
+    </h5>
+    
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    
+    <h4>$120</h4>
+    
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    
+    </div>
+    
+    
+    <!-- 5 FIXED -->
+    <div class="pro" onclick="window.location.href='hanky.html';">
+    
+    
+    <img src="images/products/n5.jpg" alt="">
+    
+    
+    <div class="des">
+    
+    <span>SHEIN</span>
+    
+    <h5>
+    Square Neck Ruched Hanky
+    </h5>
+    
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    
+    <h4>$250</h4>
+    
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    
+    </div>
+    
+    
+    <!-- 6 -->
+    <div class="pro" onclick="window.location.href='amazon.html';">
+    
+    
+    <img src="images/products/n6.jpg" alt="">
+    
+    
+    <div class="des">
+    
+    <span>AMAZON</span>
+    
+    <h5>
+    SweatyRocks Women's Graphic Print Shirt
+    </h5>
+    
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    
+    <h4>$370</h4>
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    
+    </div>
+    
+    
+    <!-- 7 -->
+    <div class="pro" onclick="window.location.href='twopiece.html';">
+    
+    
+    <img src="images/products/n7.jpg" alt="">
+    
+    
+    <div class="des">
+    
+    <span>SHEIN</span>
+    
+    <h5>
+    Women's Color Block Two Piece Tee
+    </h5>
+    
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    
+    <h4>$220</h4>
+    
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    
+    </div>
+    
+    <!-- 8 -->
+    <div class="pro" onclick="window.location.href='chanel.html';">
+    
+    
+    <img src="images/products/n8.jpg" alt="">
+    
+    
+    <div class="des">
+    
+    <span>CHANEL</span>
+    
+    <h5>
+    Chanel Dress Logo FR38
+    </h5>
+    
+    
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    
+    
+    <h4>$850</h4>
+    
+    
+    </div>
+    
+    
+    <a href="#">
+    <i class="fas fa-shopping-cart cart"></i>
+    </a>
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+
+    <div class="banner-box">
+        <h4>Crazy Deals</h4>
+        <h2>Buy 1 Get 1 Free</h2>
+        <span>The best classic clothing is on sale</span>
+        <button class="white">Learn More</button>
+    </div>
+
+    <div class="banner-box banner-box2">
+        <h4>Spring Collection</h4>
+        <h2>Upcoming Season</h2>
+        <span>New modern designs available now</span>
+        <button class="white">Collection</button>
+    </div>
+
+</section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>Seasonal Sale</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>NEW COLLECTION</h2>
+            <h3>Spring / Summer 2025</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>T-shirt</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span> 
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal" onclick="window.location.href='login.html'" >Sign Up</button>
+            
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>   
+    <script src="auth.js"></script>
+
+</body>
+</html>

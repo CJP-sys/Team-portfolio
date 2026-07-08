@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YKB CLOTHING</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<section id="header">
+    <a href="#">
+        <img src="images/banner/b1.png" class="logo" alt="YKB Clothing">
+    </a>
+
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li class="wishlist-icon">
+            <a href="wishlist.html">
+                <i class="fas fa-heart"></i>
+                <span id="wishlist-count">0</span>
+            </a>
+        </li>
+        <li id="lg-bag">
+                    <a class="active" href="cart.html" style="position: relative;">
+                        <i class="fas fa-shopping-bag"></i>
+                    
+                        <!-- CART BADGE -->
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+
+        <button id="dark-mode-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </ul>
+</section>
+
+<!-- PAGE HEADER -->
+<section id="page-header" class="about-header">
+    <h2>Let's Build Something Extraordinary.</h2>
+
+        <p>
+        Have questions, feedback, or business inquiries?
+        Our team is ready to help.
+        </p>
+
+        <a href="#form-details" class="hero-btn">
+            Contact Us
+        </a>
+</section>
+
+<!-- CONTACT DETAILS -->
+<section id="contact-details" class="section-p1">
+
+    <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit our location or contact us today</h2>
+
+        <h3>Head Office</h3>
+
+        <ul>
+            <li><i class="fas fa-map"></i> PUP Binan CITE Campus</li>
+            <li><i class="fas fa-envelope"></i> khianbustamante1@gmail.com</li>
+            <li><i class="fas fa-phone-alt"></i> 09510699549</li>
+            <li><i class="fas fa-clock"></i> Mon-Sat: 9:00am - 9:00pm</li>
+        </ul>
+    </div>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.4458629363717!2d121.06891457491888!3d14.343589586112849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d70017e959e9%3A0xffe5790bb133274f!2sPUP%20Binan%20-%20CITE%20Campus!5e0!3m2!1sen!2sph!4v1749827265173"
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+
+<!-- FORM + PEOPLE -->
+<section id="form-details">
+
+    <form id="contact-form">
+        <span>LEAVE A MESSAGE</span>
+        <h2>We love to hear from you</h2>
+
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button class="normal" type="submit">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+        </button>
+    </form>
+
+    <div class="people">
+
+        <div class="person">
+            <img src="images/people/tao.png">
+            <p><span>Prince</span> Marketing Manager<br>Phone: 09510699549<br>Email: khianbustamante1@gmail.com</p>
+        </div>
+
+        <div class="person">
+            <img src="images/people/tao1.webp">
+            <p><span>Khian</span> Marketing Manager<br>Phone: 09510699549<br>Email: khianbustamante1@gmail.com</p>
+        </div>
+
+        <div class="person">
+            <img src="images/people/tao2.webp">
+            <p><span>yankeeey</span> Marketing Manager<br>Phone: 09510699549<br>Email: khianbustamante1@gmail.com</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For Newsletter</h4>
+        <p>Get updates about latest shop and <span>special offers.</span></p>
+    </div>
+
+    <div class="form">
+        <input type="email" placeholder="Your Email">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="section-p1">
+    <p>© 2025 YKB Clothing</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="contact.js"></script>
+<script src="darkmode.js"></script>
+
+</body>
+</html>
