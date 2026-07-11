@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +16,15 @@
     <div class="container">
         <!-- Header Section -->
         <header class="header">
-            <h1>Meet Our Team</h1>
-            <p>We are a group of passionate innovators, designers, and builders dedicated to crafting beautiful and functional digital experiences.</p>
+            <div class="hero-badge">
+            Meet Our Amazing Team
+            </div>
+            <h1>Building premium websites
+that grow businesses.</h1>
+            <p>We design and develop modern websites,
+web applications, ecommerce stores,
+dashboards and custom software
+for startups and businesses.</p>     
         </header>
 
         <div class="filter-container">
@@ -24,87 +32,258 @@
             <button class="filter-btn" onclick="filterTeam('design')">Design</button>
             <button class="filter-btn" onclick="filterTeam('dev')">Development</button>
             <button class="filter-btn" onclick="filterTeam('management')">Management</button>
-        </div>
+        </div>  
+
+                <div class="stats">
+
+    <div>
+        <i class="fas fa-users"></i>
+        <h2>4+</h2>
+        <p>Team Members</p>
+    </div>
+
+    <div>
+        <i class="fas fa-code"></i>
+        <h2>10+</h2>
+        <p>Projects</p>
+    </div>
+
+</div>
+
+
 
         <!-- Team Grid -->
         <main class="team-grid">
             
             <!-- Member 1 -->
-            <div class="team-card" data-category="dev" onclick="openModal(this)">
+            <div class="team-card" >
                 <div class="image-wrapper">
                     <!-- Placeholder image: Swap with real image URL -->
-                    <img src="" alt="">
+                    <img
+                    src="images/chris.jpg"
+                    alt="Chrisjohn Pacay">
                 </div>
                 <div class="card-info">
                     <h3>Chrisjohn B. Pacay</h3>
                     <p class="role">Full Stack Developer</p>
                     <p class="bio">Has over 4 years of experience in full-stack development, building scalable web applications.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                    <span class="full-bio" style="display:none;">Has over 4 years of experience in full-stack development, building scalable web applications and collaborating across product, design, and engineering teams.</span>
-                    <span class="email-data" style="display:none;">chrisjohnpacay1@gmail.com</span>
-                    <span class="skills-data" style="display:none;">JavaScript, React, Node.js, UI Systems</span>
+                    
+                                    <div class="skills-preview">
+
+    <i class="devicon-html5-plain colored" title="HTML5"></i>
+
+    <i class="devicon-css3-plain colored" title="CSS3"></i>
+
+    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+
+    <i class="devicon-nodejs-plain colored" title="NodeJS"></i>
+
+    <i class="devicon-express-original" title="Express"></i>
+
+    <i class="devicon-mysql-plain colored" title="MySQL"></i>
+
+    <i class="devicon-github-original" title="GitHub"></i>
+
+</div>
+
+        <div class="social-links">
+        
+        <a href="#">
+        <i class="fab fa-github"></i>
+        </a>
+        
+        <a href="mailto:example@email.com">
+        <i class="fas fa-envelope"></i>
+        </a>
+        
+        </div>
+
+        <button class="view-profile"
+        onclick="openModal(this)">
+            View Profile
+            <i class="fas fa-arrow-right"></i>
+        </button>
+
+        <span class="full-bio hidden">
+        Chrisjohn is a Full Stack Developer specializing in scalable web applications  and 
+        backend systems.
+        </span>
+
+        <span class="email-data hidden">
+        example@email.com
+        </span>
+
+        <span class="skills-data hidden">
+        
+        </span>           
+
                 </div>
             </div>
 
             <!-- Member 2 -->
-            <div class="team-card" data-category="dev" onclick="openModal(this)">
-                <div class="image-wrapper">
-                    <img src="" alt="">
-                </div>
-                <div class="card-info">
-                    <h3></h3>
-                    <p class="role">Developer</p>
-                    <p class="bio"></p>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                    <span class="full-bio" style="display:none;"></span>
-                    <span class="email-data" style="display:none;"></span>
-                    <span class="skills-data" style="display:none;"></span>
-                </div>
+        <div class="team-card">
+            <div class="image-wrapper">
+        <img src="images/khian.jpg" alt="Khian Bustamante">
             </div>
+        
+            <div class="card-info">
+            
+                <h3>Khian D. Bustamante</h3>
+                
+                <p class="status">
+                    <i class="fas fa-circle"></i>
+                    Available for Collaboration
+                </p>
+                <p class="role">
+                    FRONT END DEVELOPER
+                </p>
+            
+                <p class="bio">
+                    Computer Engineering student passionate about web development and building modern ecommerce applications.
+                </p>                                
+
+                <div class="skills-preview">
+
+    <i class="devicon-html5-plain colored" title="HTML5"></i>
+
+    <i class="devicon-css3-plain colored" title="CSS3"></i>
+
+    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+
+    <i class="devicon-nodejs-plain colored" title="NodeJS"></i>
+
+    <i class="devicon-express-original" title="Express"></i>
+
+    <i class="devicon-mysql-plain colored" title="MySQL"></i>
+
+    <i class="devicon-github-original" title="GitHub"></i>
+
+</div>
+            
+                <div class="social-links">
+                
+                    <!-- GitHub -->
+                    <a href="https://github.com/BUSTAMANTEKHIAN" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                
+                    <!-- Email -->
+                    <a href="mailto:khianbustamante1@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    
+                
+                    <!-- Ecommerce Project -->
+                    <a href="khian-ecommerce/index.html" target="_blank" aria-label="Project">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                
+                </div>
+
+                    <button
+                    class="view-profile"
+                    onclick="openModal(this)">
+                    View Profile
+                    <i class="fas fa-arrow-right"></i>
+                </button> 
+            
+                <span class="full-bio hidden">
+                    I developed the YKB Clothing ecommerce website featuring user authentication, shopping cart, wishlist, checkout, receipt generation, order history, responsive design, and backend integration using HTML, CSS, JavaScript, Node.js, Express, and MySQL.
+                </span>
+            
+                <span class="email-data hidden">
+                    khianbustamante1@gmail.com
+                </span>
+            
+                <span class="skills-data" hidden">
+                    HTML, CSS, JavaScript, Node.js, Express, MySQL, Git, GitHub
+                </span>
+            
+            </div>
+        </div>
 
             <!-- Member 3 -->
-            <div class="team-card" data-category="design" onclick="openModal(this)">
+            <div class="team-card">
                 <div class="image-wrapper">
-                    <img src="" alt="">
+                    <img
+src="images/weejay.jpg"
+alt="Weejay Regalla">
                 </div>
                 <div class="card-info">
-                    <h3></h3>
-                    <p class="role"></p>
-                    <p class="bio"></p>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-                    </div>
-                    <span class="full-bio" style="display:none;"></span>
+                    <h3>Weejay P. Regalla</h3>
+                    <p class="role">Backend Developer</p>
+                    <p class="bio">
+Backend developer passionate about APIs and databases.
+</p>
+
+<div class="social-links">
+
+<a href="#">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="mailto:example@email.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+<button class="view-profile"
+onclick="openModal(this)">
+View Profile
+<i class="fas fa-arrow-right"></i>
+</button>
+
+<span class="full-bio hidden">
+Experienced in backend systems, server-side programming and database integration.
+</span>
+
+<span class="email-data hidden">
+example@email.com
+</span>
+
+<span class="skills-data hidden">
+Node.js,Express,MySQL,REST API
+</span>
                     <span class="email-data" style="display:none;"></span>
                     <span class="skills-data" style="display:none;"></span>
                 </div>
             </div>
 
             <!-- Member 4 -->
-            <div class="team-card" data-category="dev" onclick="openModal(this)">
+            <div class="team-card">
                 <div class="image-wrapper">
-                    <img src="" alt="">
+                    <img
+src="images/euline.jpg"
+alt="Euline Refamonte">
                 </div>
                 <div class="card-info">
-                    <h3></h3>
-                    <p class="role">Backend Developer</p>
-                    <p class="bio"></p>
+                    <h3>Euline M. Refamonte</h3>
+                    <p class="role">Web Designer</p>
+                    <p class="bio">
+                    Creative web designer focused on UI/UX and responsive layouts.
+                    </p>
                     <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Globe"><i class="fas fa-globe"></i></a>
-                    </div>
-                    <span class="full-bio" style="display:none;"></span>
+
+</div>
+<div class="team-card" data-category="design"></div>
+
+<button class="view-profile">
+    View Profile
+    <i class="fas fa-arrow-right"></i>
+</button>
+
+<span class="full-bio hidden">
+Creates modern user interfaces and responsive websites using HTML and CSS.
+</span>
+
+<span class="email-data hidden">
+example@email.com
+</span>
+
+<span class="skills-data hidden">
+HTML,CSS,Figma,Photoshop
+</span>
                     <span class="email-data" style="display:none;"></span>
                     <span class="skills-data" style="display:none;"></span>
                 </div>
@@ -113,29 +292,61 @@
         </main>
     </div>
 
+
+
     <div id="profileModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div class="modal-body">
-                <img id="modalImg" src="" alt="Team Member">
-                <div class="modal-info">
-                    <h2 id="modalName">Team Member</h2>
-                    <p id="modalRole" class="modal-role">Role</p>
-                    <p id="modalBio" class="modal-bio">Detailed bio goes here...</p>
-                    
-                    <div class="skills-tags">
-                        <h4>Core Expertise:</h4>
-                        <div id="modalSkills" class="tags-container">
-                            </div>
-                    </div>
-                    
-                    <a id="modalMail" href="#" class="modal-contact-btn">
-                        <i class="fas fa-envelope"></i> Get in Touch
-                    </a>
-                </div>
-            </div>
-        </div>
+
+    <button class="close-btn" onclick="closeModal()">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <div class="profile-header">
+
+        <img id="modalImg">
+
+        <h2 id="modalName"></h2>
+
+        <span id="modalRole"></span>
+
+        <p id="modalBio"></p>
+
+        <div id="modalSkills" class="skill-list"></div>
+
     </div>
+
+    <div class="projects-section">
+
+        <h3>
+            <i class="fas fa-folder-open"></i>
+            Featured Projects
+        </h3>
+
+        <div id="modalProjects"></div>
+
+    </div>
+
+    <a id="modalMail" class="contact-btn">
+
+    <i class="fas fa-envelope"></i>
+
+    <span class="title">
+        Let's Build Your Project
+    </span>
+
+    <span class="subtitle">
+        Average response: under 24 hours
+    </span>
+
+</a>
+
+</div>
+    </div>  
+
+
+<footer class="footer">
+    <p>© 2026 Team Portfolio. Designed & Developed with Dedication</p>
+</footer>
 
     <script src="script.js"></script>
 </body>

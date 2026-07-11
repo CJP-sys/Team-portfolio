@@ -8,18 +8,41 @@ const user = JSON.parse(localStorage.getItem("currentUser"));
 document.addEventListener("DOMContentLoaded", loadCart);
 
 function loadCart() {
-    if (!user) return;
+    if (!user){
+    cartItems.innerHTML = `
+    <tr class="empty-cart">
+        <td colspan="7">
+            Please login first.
+        </td>
+    </tr>`;
+    return;
+}
 
     fetch(`http://localhost:3000/api/cart/${user.id}`)
-        .then(res => res.json())
-        .then(data => {
+.then(res=>{
+    if(!res.ok)
+        throw new Error("Failed to load cart");
+    return res.json();
+})
+.then(data=>{
+    renderCart(data.items);
+    updateTotals(data.total);
+    updateBadge(data.items);
+    toggleEmptyCart(data.items);    
 
-            renderCart(data.items);
-            updateTotals(data.total);
-            updateBadge(data.items);
-            toggleEmptyCart(data.items);
+    
+})
 
-        });
+.catch(err=>{
+    console.error(err);
+
+    cartItems.innerHTML=`
+    <tr class="empty-cart">
+        <td colspan="7">
+            Unable to connect to server.
+        </td>
+    </tr>`;
+});
 }
 
 function renderCart(items) {
@@ -35,34 +58,42 @@ function renderCart(items) {
 
         const total = item.price * item.quantity;
 
-        cartItems.innerHTML += `
+        
+    });
+
+    cartItems.innerHTML += `
         <tr>
             <td>
-                <button class="remove-btn" onclick="removeItem(${item.id})">🗑</button>
+                <button class="remove-btn" onclick="removeItem(${item.id})"><i class="fas fa-trash-alt"></i></button>
             </td>
 
             <td>
-                <img src="${item.image || 'images/default.png'}" width="60">
+                <img src="${item.image || 'images/default.png'} "onerror="this.src='images/default.png'"> width="60">
             </td>
 
             <td>${item.product_name}</td>
 
             <td>${item.size || '-'}</td>
 
-            <td>₱${item.price}</td>
+            <td>₱${Number(item.price).toFixed(2)}</td>
 
             <td>
                 <div class="qty-box">
                     <button onclick="updateQty(${item.id}, ${item.quantity - 1})">-</button>
                     <span>${item.quantity}</span>
-                    <button onclick="updateQty(${item.id}, ${item.quantity + 1})">+</button>
+                    <button onclick="updateQty(${item.id}, ${item.quantity + 1})">+</button>    
+                    <button
+                    ${item.quantity<=1?"disabled":""}
+                    onclick="updateQty(${item.id},${item.quantity-1})">
+                    -
+                    </button>
                 </div>
             </td>
 
-            <td>₱${total}</td>
+            <td>₱${Number(total).toFixed(2)}</td>
         </tr>
         `;
-    });
+
 }
 
 function updateQty(id, qty) {
@@ -90,7 +121,9 @@ function updateTotals(total) {
     subtotalBox.innerHTML = `
         <tr>
             <td>Cart Subtotal</td>
-            <td>₱${total}</td>
+            <td>₱${Number(total).toLocaleString("en-PH",{
+    minimumFractionDigits:2
+})}</td>
         </tr>
         <tr>
             <td>Shipping</td>
@@ -98,7 +131,7 @@ function updateTotals(total) {
         </tr>
         <tr>
             <td><strong>Total</strong></td>
-            <td><strong>₱${total}</strong></td>
+            <td><strong>₱${Number(total).toFixed(2)}</strong></td>
         </tr>
     `;
 }

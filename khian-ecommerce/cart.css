@@ -59,7 +59,7 @@
     background: #f8f8f8;
 }
 
-#cart table thead td{
+#cart table thead th{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
@@ -182,7 +182,7 @@
     object-fit: cover;
 }
 
-#cart table thead td{
+#cart table thead th{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
